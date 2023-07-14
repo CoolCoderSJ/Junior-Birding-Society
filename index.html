@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="autumn">
+
+<head>
+    <!-- copyright attributions -->
+    <!-- background circuit thingy from https://dribbble.com/shots/3433250-Circuit-Animation-SVG-CSS -->
+    <!-- end copyright -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junior Birding Society</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="navbar bg-base-100" style="position: fixed; top: 0; z-index: 999;">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href="#" onclick="lenis.scrollTo('#')">Junior Birding Society</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#info" onclick="lenis.scrollTo('#info')">Events</a></li>
+        <li><a href="#schedule" onclick="lenis.scrollTo('#sponsors')">Sponsors</a></li>
+        <li><a href="#about" onclick="lenis.scrollTo('#about')">About</a></li>
+        <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="hero min-h-screen bg-base-100">
+      <div class="hero-content flex-col lg:flex-row animate__animated animate__zoomInDown" style="justify-content: space-around; width: 100%;">
+        <img src="logo.png" class="max-w-xs rounded-lg" />
+        <div class="max-w-lg">
+          <h1 class="text-5xl font-bold">Junior Birding Society</h1>
+          <p class="py-6">Cultivating a lifelong love for birds in elementary to middle school students and igniting a passion for scientific inquiry.</p>
+          <a href="#info" onclick="lenis.scrollTo('#info')"><button class="btn btn-neutral">Learn More</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="hero min-h-screen bg-base-100 pt-16" id="info">
+      <div class="hero-content text-center">
+        <div>
+          <h1 class="text-5xl font-bold">What We Do</h1><br>
+          <p>We host a variety of different events to get as many people interested in birding as possible.</p>
+          
+          <div class="hero bg-base-100" style="min-height: 60vh;">
+            <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
+              <img src="https://s3.amazonaws.com/visit-pittsburgh/CMS/National-Aviary_Flock-of-American-Flamingos-in-Wetlands_2022_Elliott-Cramer.jpg" class="slideInLeft max-w-xs rounded-lg" />
+              <div class="max-w-lg slideInRight">
+                <h1 class="text-5xl font-bold">Aviary and Sanctuary Visits</h1>
+                <p class="py-6">Children can interact with birds, such as visiting bird sanctuaries or aviaries that allow hands-on experiences.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero bg-base-100" style="min-height: 60vh;">
+            <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
+              <div class="max-w-lg slideInLeft">
+                <h1 class="text-5xl font-bold">Seminars</h1>
+                <p class="py-6">Educational seminars about different bird species and their importance in the natural world, emphasizing conservation and ecological roles.</p>
+              </div>
+              <img src="https://media.istockphoto.com/id/1184658011/vector/people-at-the-seminar-presentation-conference-vector-illustration-business-training-coaching.jpg?s=612x612&w=0&k=20&c=2bUGH65MYIvfMToFtaJrvpbxowMlLiLeNiumyJJvkPM=" class="slideInRight max-w-xs rounded-lg" />
+            </div>
+          </div> 
+
+          <div class="hero bg-base-100" style="min-height: 60vh;">
+            <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
+              <img src="https://static01.nyt.com/images/2019/06/29/travel/29wirecutter-bird/3f36372a7ce54e2f91f36a1499580f23-superJumbo.jpg" class="slideInLeft max-w-xs rounded-lg" />
+              <div class="max-w-lg slideInRight">
+                <h1 class="text-5xl font-bold">Bird Watching Trips</h1>
+                <p class="py-6">Guided trips where students can learn the basics of birdwatching, including identification techniques and observing behavior in their natural habitats.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero bg-base-100" style="min-height: 60vh;">
+            <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
+              <div class="max-w-lg slideInLeft">
+                <h1 class="text-5xl font-bold">Birding Workshops</h1>
+                <p class="py-6">Qualified birding experts teach students about the fundamentals of birding, including bird identification, habitat preservation, and conservation efforts.</p>
+              </div>
+              <img src="https://i0.wp.com/tombolphotoworkshops.com/wp-content/uploads/2022/05/pbunting2.jpg?resize=2000%2C1200&ssl=1" class="slideInRight max-w-xs rounded-lg" />
+            </div>
+          </div>
+
+          <div class="hero bg-base-100" style="min-height: 60vh;">
+            <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
+              <img src="https://1.bp.blogspot.com/-xUdQNqiniWs/UQ4K3A4xdDI/AAAAAAAAAeE/6GFnGZgRwc4/s1600/froot.jpg" class="slideInLeft max-w-xs rounded-lg" />
+              <div class="max-w-lg slideInRight">
+                <h1 class="text-5xl font-bold">Classroom Visits</h1>
+                <p class="py-6">Offer to bring birds directly to the classroom, providing interactive sessions where students can learn about birds up close.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero bg-base-100" style="min-height: 60vh;">
+            <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
+              <div class="slideInLeft max-w-lg">
+                <h1 class="text-5xl font-bold">Birding Competitions</h1>
+                <p class="py-6">Competitions that involve activities like creating your own bird species, designing birdhouses, or solving bird-themed puzzles.</p>
+              </div>
+              <img src="https://uploads-ssl.webflow.com/5e8ffd61d516146f7ddc860b/5f5d2bde6337451fad0b8478_AdobeStock_284472751_Red-winged-Blackbird.jpg" class="slideInRight max-w-xs rounded-lg" />
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hero min-h-screen bg-base-100 pt-16" id="sponsors">
+      <div class="hero-content text-center">
+        <div>
+          <h1 class="text-5xl font-bold">Sponsors</h1><br>
+          <p>We need sponsors to make it all happen! Please consider sponsoring us. You can find our sponsorship packet <a href="" class="link link-info">here</a>. If you have any questions, don't hesitate to <a href="#contact" class="link link-info" onclick="lenis.scrollTo('#contact')">contact us</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero min-h-screen bg-base-100 pt-16" id="about">
+      <div class="hero-content text-center">
+        <div>
+          <h1 class="text-5xl font-bold">About</h1>
+          <p class="text-md py-6">Our mission at the Junior Birding Society is to cultivate a lifelong love for birds in elementary to middle school students and ignite a passion for scientific inquiry, inspiring the next generation of environmental stewards through engaging school outreach and events that celebrate the wonder of birds and foster curiosity in the realm of scientific discovery.</p>
+          <div class="team-grid grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" style="text-align: left;">
+            <div class="container card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shuchir Jain</h2>
+                <p>Co-Founder, Co-President</p>
+              </div>
+            </div>
+            <div class="container card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shuchir Jain</h2>
+                <p>Co-Founder, Co-President</p>
+              </div>
+            </div>
+            <div class="container card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shuchir Jain</h2>
+                <p>Co-Founder, Co-President</p>
+              </div>
+            </div>
+            <div class="container card w-96 bg-base-100 shadow-xl">
+              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shuchir Jain</h2>
+                <p>Co-Founder, Co-President</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero min-h-screen bg-base-100 pt-16" id="contact">
+      <div class="hero-content text-center">
+        <div>
+          <h1 class="text-5xl font-bold">Contact</h1>
+          <p class="text-md py-6">Have any questions? We'll happily answer them! </p>
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <a class="btn btn-outline" href="mailto:team@juniorbirdingsociety.org"><ion-icon name="mail-outline" style="font-size: 24px;"></ion-icon> team@juniorbirdingsociety.org</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+</body>
+</html>

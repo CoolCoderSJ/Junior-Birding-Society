@@ -1,0 +1,14 @@
+.alert {
+    background-color: hsl(var(--b1) / 1);
+}
+
+
+.team-grid .card {
+    max-width: 37vh;
+}
+
+@media only screen and (min-width: 1080px) {
+.wide-on-big-screen {
+  width: 75vh;
+}
+}
