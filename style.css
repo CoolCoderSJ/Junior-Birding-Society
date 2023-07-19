@@ -12,3 +12,12 @@
   width: 75vh;
 }
 }
+
+.card figure {
+  height: 325px;
+}
+
+.fillbg {
+  background-size: cover;
+  background-position: center;
+}

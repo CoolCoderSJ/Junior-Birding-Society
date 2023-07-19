@@ -37,13 +37,14 @@
       </ul>
     </div>
   </div>
-
+  
     <div class="hero min-h-screen bg-base-100">
       <div class="hero-content flex-col lg:flex-row animate__animated animate__zoomInDown" style="justify-content: space-around; width: 100%;">
         <img src="logo.png" class="max-w-xs rounded-lg" />
         <div class="max-w-lg">
           <h1 class="text-5xl font-bold">Junior Birding Society</h1>
-          <p class="py-6">Cultivating a lifelong love for birds in elementary to middle school students and igniting a passion for scientific inquiry.</p>
+          <p class="py-6">Where Young Minds Take Flight
+          </p>
           <a href="#info" onclick="lenis.scrollTo('#info')"><button class="btn btn-neutral">Learn More</button></a>
         </div>
       </div>
@@ -51,13 +52,13 @@
 
 
     
-    <div class="hero min-h-screen bg-base-100 pt-16" id="info">
+    <div class="hero min-h-screen bg-base-200 pt-16" id="info">
       <div class="hero-content text-center">
         <div>
           <h1 class="text-5xl font-bold">What We Do</h1><br>
           <p>We host a variety of different events to get as many people interested in birding as possible.</p>
           
-          <div class="hero bg-base-100" style="min-height: 60vh;">
+          <div class="hero bg-base-200" style="min-height: 60vh;">
             <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
               <img src="https://s3.amazonaws.com/visit-pittsburgh/CMS/National-Aviary_Flock-of-American-Flamingos-in-Wetlands_2022_Elliott-Cramer.jpg" class="slideInLeft max-w-xs rounded-lg" />
               <div class="max-w-lg slideInRight">
@@ -67,7 +68,7 @@
             </div>
           </div>
 
-          <div class="hero bg-base-100" style="min-height: 60vh;">
+          <div class="hero bg-base-200" style="min-height: 60vh;">
             <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
               <div class="max-w-lg slideInLeft">
                 <h1 class="text-5xl font-bold">Seminars</h1>
@@ -77,7 +78,7 @@
             </div>
           </div> 
 
-          <div class="hero bg-base-100" style="min-height: 60vh;">
+          <div class="hero bg-base-200" style="min-height: 60vh;">
             <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
               <img src="https://static01.nyt.com/images/2019/06/29/travel/29wirecutter-bird/3f36372a7ce54e2f91f36a1499580f23-superJumbo.jpg" class="slideInLeft max-w-xs rounded-lg" />
               <div class="max-w-lg slideInRight">
@@ -87,7 +88,7 @@
             </div>
           </div>
 
-          <div class="hero bg-base-100" style="min-height: 60vh;">
+          <div class="hero bg-base-200" style="min-height: 60vh;">
             <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
               <div class="max-w-lg slideInLeft">
                 <h1 class="text-5xl font-bold">Birding Workshops</h1>
@@ -97,7 +98,7 @@
             </div>
           </div>
 
-          <div class="hero bg-base-100" style="min-height: 60vh;">
+          <div class="hero bg-base-200" style="min-height: 60vh;">
             <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
               <img src="https://1.bp.blogspot.com/-xUdQNqiniWs/UQ4K3A4xdDI/AAAAAAAAAeE/6GFnGZgRwc4/s1600/froot.jpg" class="slideInLeft max-w-xs rounded-lg" />
               <div class="max-w-lg slideInRight">
@@ -107,7 +108,7 @@
             </div>
           </div>
 
-          <div class="hero bg-base-100" style="min-height: 60vh;">
+          <div class="hero bg-base-200" style="min-height: 60vh;">
             <div class="hero-content flex-col lg:flex-row" style="justify-content: space-around; width: 100%;">
               <div class="slideInLeft max-w-lg">
                 <h1 class="text-5xl font-bold">Birding Competitions</h1>
@@ -131,38 +132,67 @@
       </div>
     </div>
 
-    <div class="hero min-h-screen bg-base-100 pt-16" id="about">
+    <div class="hero min-h-screen bg-base-200 pt-16" id="about">
       <div class="hero-content text-center">
         <div>
           <h1 class="text-5xl font-bold">About</h1>
           <p class="text-md py-6">Our mission at the Junior Birding Society is to cultivate a lifelong love for birds in elementary to middle school students and ignite a passion for scientific inquiry, inspiring the next generation of environmental stewards through engaging school outreach and events that celebrate the wonder of birds and foster curiosity in the realm of scientific discovery.</p>
           <div class="team-grid grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" style="text-align: left;">
-            <div class="container card w-96 bg-base-100 shadow-xl">
-              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+            <div class="card container w-96 bg-base-100 shadow-xl">
+              <figure class="fillbg" style="background-image: url('heads/james.png')"></figure>
               <div class="card-body">
-                <h2 class="card-title">Shuchir Jain</h2>
-                <p>Co-Founder, Co-President</p>
+                <h2 class="card-title">James Xiao</h2>
+                <p>Co-Founder, Co-CEO, Board Member</p>
+                <button class="btn" onclick="james_bio.showModal()">Read More</button>
+                <dialog id="james_bio" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    <h3 class="font-bold text-lg">James Xiao</h3>
+                    <p class="py-4">Hi! My name is James Xiao and I am one of the founders, CEO, and member of the board of directors here at the Junior Birding Society. I manage the operations and ensure we pursue our ultimate goal of spreading the love of birds to students around the world. My first foray into birding was in 7th grade of middle school, where I discovered the activity. Since then, birding has inspired me to ask scientific questions and to perform meaningful research. I have performed award winning research on the effects of Metabolites on Colorectal Cancer and plan to keep researching for as long as I live.</p>
+              
+                  </form>
+                  <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
               </div>
             </div>
-            <div class="container card w-96 bg-base-100 shadow-xl">
-              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+            <div class="card container w-96 bg-base-100 shadow-xl">
+              <figure class="fillbg" style="background-image: url('heads/anish.png')"></figure>
               <div class="card-body">
-                <h2 class="card-title">Shuchir Jain</h2>
-                <p>Co-Founder, Co-President</p>
+                <h2 class="card-title">Anish Ramachandruni</h2>
+                <p>Co-Founder, Co-CEO, Board Member</p>
+                <button class="btn" onclick="anish_bio.showModal()">Read More</button>
+                <dialog id="anish_bio" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    <h3 class="font-bold text-lg">Anish Ramachandruni</h3>
+                    <p class="py-4">Hello! My name is Anish Ramachandruni and I am one of the founders, CEOs, and members of the board of directors at the Junior Birding Society. I manage the operations, help organize events, and I help ensure we pursue our ultimate goal of spreading the love and passion of birds to the youth around the world. My first introduction into birding was in 8th grade when I was stumped in art class and an idea of drawing a bird led me to discover the wonderful and vivid world of birds.This inspired my hobby of Birding, and Birding as a whole helped me express my art in new and vivid forms and it helped me develop a passion for scientific inquiry.</p>
+              
+                  </form>
+                  <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
               </div>
             </div>
-            <div class="container card w-96 bg-base-100 shadow-xl">
-              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
+            <div class="card container w-96 bg-base-100 shadow-xl">
+              <figure class="fillbg" style="background-image: url('https://chesspire.org/images/shuchir.jpg')"></figure>
               <div class="card-body">
                 <h2 class="card-title">Shuchir Jain</h2>
-                <p>Co-Founder, Co-President</p>
-              </div>
-            </div>
-            <div class="container card w-96 bg-base-100 shadow-xl">
-              <figure><img src="https://chesspire.org/images/shuchir.jpg" alt="Shuchir Jain" /></figure>
-              <div class="card-body">
-                <h2 class="card-title">Shuchir Jain</h2>
-                <p>Co-Founder, Co-President</p>
+                <p>Board Member</p>
+                <button class="btn" onclick="shuchir_bio.showModal()">Read More</button>
+                <dialog id="shuchir_bio" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    <h3 class="font-bold text-lg">Shuchir Jain</h3>
+                    <p class="py-4">Hi! I'm Shuchir Jain, and I am one of the members of the board of directors. At Junior Birding Society, I help handle logistics. I was first introduced to birding when my family hung a bird feeder outside of my house. It was truly fascinating to see all kinds of birds come up to the feeder to eat and rest. </p>
+              
+                  </form>
+                  <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
               </div>
             </div>
           </div>
@@ -176,7 +206,7 @@
           <h1 class="text-5xl font-bold">Contact</h1>
           <p class="text-md py-6">Have any questions? We'll happily answer them! </p>
           <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
-            <a class="btn btn-outline" href="mailto:team@juniorbirdingsociety.org"><ion-icon name="mail-outline" style="font-size: 24px;"></ion-icon> team@juniorbirdingsociety.org</a>
+            <a class="btn btn-outline" href="mailto:juniorbirdingsociety@gmail.com"><ion-icon name="mail-outline" style="font-size: 24px;"></ion-icon> juniorbirdingsociety@gmail.com</a>
           </div>
         </div>
       </div>
