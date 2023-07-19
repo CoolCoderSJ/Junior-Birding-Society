@@ -17,6 +17,10 @@
   height: 325px;
 }
 
+.card .figure2 {
+  height: 250px;
+}
+
 .fillbg {
   background-size: cover;
   background-position: center;
