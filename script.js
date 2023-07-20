@@ -49,7 +49,7 @@ $(document).ready(function(){
             var docViewBottom = docViewTop + $window.height();
             var elemTop = $elem.offset().top;
             var elemBottom = elemTop + $elem.height();
-            if (elemBottom < docViewBottom+150) {
+            if (elemBottom < docViewBottom) {
                 $elem.css('opacity', 1)
                 if ($(container).hasClass('already_animated')) return
                 animateCSS(container, 'slideInLeft')
@@ -66,7 +66,7 @@ $(document).ready(function(){
             var docViewBottom = docViewTop + $window.height();
             var elemTop = $elem.offset().top;
             var elemBottom = elemTop + $elem.height();
-            if (elemBottom < docViewBottom+150) {
+            if (elemBottom < docViewBottom) {
                 $elem.css('opacity', 1)
                 if ($(container).hasClass('already_animated')) return
                 animateCSS(container, 'slideInRight')
@@ -83,7 +83,7 @@ $(document).ready(function(){
             var docViewBottom = docViewTop + $window.height();
             var elemTop = $elem.offset().top;
             var elemBottom = elemTop + $elem.height();
-            if (elemBottom < docViewBottom+150) {
+            if (elemBottom < docViewBottom+200) {
                 $elem.css('opacity', 1)
                 if ($(container).hasClass('already_animated')) return
                 animateCSS(container, 'fadeInUp')
