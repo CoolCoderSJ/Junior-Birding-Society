@@ -43,6 +43,7 @@ $(document).ready(function(){
         let containersLeft = document.getElementsByClassName('slideInLeft')
         let containersLeftArray = Array.from(containersLeft)
         containersLeftArray.forEach((container) => {
+            if (!$(container).hasClass('already_animated')) $(container).css("opacity", 0)
             let $elem = $(container)
             let $window = $(window)
             var docViewTop = $window.scrollTop();
@@ -60,6 +61,7 @@ $(document).ready(function(){
         let containersRight = document.getElementsByClassName('slideInRight')
         let containersRightArray = Array.from(containersRight)
         containersRightArray.forEach((container) => {
+            if (!$(container).hasClass('already_animated')) $(container).css("opacity", 0)
             let $elem = $(container)
             let $window = $(window)
             var docViewTop = $window.scrollTop();
@@ -77,6 +79,7 @@ $(document).ready(function(){
         let containers = document.getElementsByClassName('container')
         let containersArray = Array.from(containers)
         containersArray.forEach((container) => {
+            if (!$(container).hasClass('already_animated')) $(container).css("opacity", 0)
             let $elem = $(container)
             let $window = $(window)
             var docViewTop = $window.scrollTop();
