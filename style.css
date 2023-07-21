@@ -7,12 +7,9 @@
     max-width: 37vh;
 }
 
-@media only screen and (min-width: 3800px) {
-  .grid {
-    width: 125vh;
-  }
+.grid {
+  width: 150vh;
 }
-
 
 .bg {
   background-image: url("bird.png");
