@@ -31,8 +31,8 @@
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
         <li><a href="#info" onclick="lenis.scrollTo('#info')">Info</a></li>
-        <li><a href="#events" onclick="lenis.scrollTo('#events')">Events</a></li>
-        <li><a href="#sponsors" onclick="lenis.scrollTo('#sponsors')">Sponsors</a></li>
+        <li><a href="#events" onclick="lenis.scrollTo('#events')">Activities</a></li>
+        <li><a href="#sponsors" onclick="lenis.scrollTo('#sponsors')">Partners</a></li>
         <li><a href="#about" onclick="lenis.scrollTo('#about')">About</a></li>
         <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
       </ul>
@@ -81,7 +81,7 @@
     <div class="hero min-h-screen bg-base-200 pt-16" id="events">
       <div class="hero-content text-center">
         <div>
-          <h1 class="text-5xl font-bold">What We Do</h1><br>
+          <h1 class="text-5xl font-bold">Activities</h1><br>
           <p>We host a variety of different events to get as many people interested in birding as possible.</p>
           <br>
           <div class=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" style="text-align: left;">
@@ -139,16 +139,40 @@
       </div>
     </div>
 
-    <div class="hero bg-base-100 pt-16" id="sponsors"  style="min-height: 70vh;">
+    <div class="hero bg-base-100 pt-16" id="contact"  style="min-height: 70vh;">
+      <div class="hero-content text-center">
+        <div class="slideInLeft">
+          <h1 class="text-5xl font-bold">Become a member!</h1>
+          <p class="text-md py-6">It is completely free to become a member of the Junior Birding Society! By removing the financial barrier surrounding birding, we ensure that every student, regardless of their financial situation, has an equal opportunity to pursue birding. We believe that every student should have the chance to chase their passions. As a member, you can get access to exclusive birding opportunities and events. Join us as a member of the JBS!
+          </p>
+          <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <button class="btn btn-primary" onclick="member_form.showModal()">Become a Member</button>
+            <dialog id="member_form" class="modal">
+              <form method="dialog" class="modal-box">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <h3 class="font-bold text-lg">Become a Member</h3>
+                <iframe data-tally-src="https://tally.so/embed/3qaxqk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1527" frameborder="0" marginheight="0" marginwidth="0" title="JBS Member Registration Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+              </form>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
+          </div>
+        </div>
+        <img src="bird3.webp" class="max-w-xs rounded-lg slideInRight" />
+      </div>
+    </div>
+
+    <div class="hero bg-base-200 pt-16" id="sponsors"  style="min-height: 70vh;">
       <div class="hero-content text-center">
         <div>
-          <h1 class="text-5xl font-bold">Sponsors</h1><br>
-          <p>We need sponsors to make it all happen! Please consider sponsoring us. You can find our sponsorship packet <a href="" class="link link-info">here</a>. If you have any questions, don't hesitate to <a href="#contact" class="link link-info" onclick="lenis.scrollTo('#contact')">contact us</a>.</p>
+          <h1 class="text-5xl font-bold">Sponsors and Partners</h1><br>
+          <br><br><p class="text-3xl font-bold flex gap-8">Partnered with the <img style="height: 40px;" src="http://www.aswp.org/assets/logotype-9a20b5b081b0610845f19a0aefb79bc00a1158ed1e8187c71d7dc9f72abe48d7.svg"></p>
         </div>
       </div>
     </div>
 
-    <div class="hero min-h-screen bg-base-200 pt-16" id="about">
+    <div class="hero min-h-screen bg-base-100 pt-16" id="about">
       <div class="hero-content text-center">
         <div>
           <h1 class="text-5xl font-bold">About</h1>
@@ -216,29 +240,6 @@
       </div>
     </div>
 
-    <div class="hero bg-base-100 pt-16" id="contact"  style="min-height: 70vh;">
-      <div class="hero-content text-center">
-        <div class="slideInLeft">
-          <h1 class="text-5xl font-bold">Become a member!</h1>
-          <p class="text-md py-6">It is completely free to become a member of the Junior Birding Society! By removing the financial barrier surrounding birding, we ensure that every student, regardless of their financial situation, has an equal opportunity to pursue birding. We believe that every student should have the chance to chase their passions. As a member, you can get access to exclusive birding opportunities and events. Join us as a member of the JBS!
-          </p>
-          <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
-            <button class="btn btn-primary" onclick="member_form.showModal()">Become a Member</button>
-            <dialog id="member_form" class="modal">
-              <form method="dialog" class="modal-box">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                <h3 class="font-bold text-lg">Become a Member</h3>
-                <iframe data-tally-src="https://tally.so/embed/3qaxqk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1527" frameborder="0" marginheight="0" marginwidth="0" title="JBS Member Registration Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-              </form>
-              <form method="dialog" class="modal-backdrop">
-                <button>close</button>
-              </form>
-            </dialog>
-          </div>
-        </div>
-        <img src="bird3.webp" class="max-w-xs rounded-lg slideInRight" />
-      </div>
-    </div>
 
     <div class="hero bg-base-200 pt-16" id="contact"  style="min-height: 70vh;">
       <div class="hero-content text-center">
