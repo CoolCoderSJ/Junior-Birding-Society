@@ -4,11 +4,12 @@
 
 
 .team-grid .card {
-    max-width: 37vh;
+    max-width: 45vh;
 }
 
-.grid {
-  width: 150vh;
+.flex {
+  width: 100%;
+  justify-content: center;
 }
 
 .bg {
