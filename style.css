@@ -2,6 +2,9 @@
     background-color: hsl(var(--b1) / 1);
 }
 
+h1, h2, h3, h4, h5, h6, p, a, button, small, i, b {
+  color: white;
+}
 
 .team-grid .card {
     max-width: 45vh;
