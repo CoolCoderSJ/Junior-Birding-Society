@@ -301,9 +301,83 @@ footer a:hover {
 
 @media (min-width: 2160px) {
   .hero {
-    min-height: 40vh;
+    min-height: 30vh;
   }
   section {
     min-height: 20vh;
+  }
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero img {
+    width: 50%;
+  }
+
+  .big {
+    font-size: 5rem;
+  }
+
+  .medium {
+    font-size: 3rem;
+  }
+
+  .bigger {
+    font-size: 2rem;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+
+  .person img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .person h3 {
+    font-size: 2rem;
+  }
+
+  .person p {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card h2 {
+    font-size: 3rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  .partnersList {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .partnersList div {
+    width: fit-content;
+  }
+
+  .contact-btn {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+
+  footer a:hover {
+    font-size: 1.5rem;
   }
 }
