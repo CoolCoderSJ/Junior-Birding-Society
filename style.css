@@ -298,3 +298,12 @@ footer a:hover {
     width: fit-content;
   }
 }
+
+@media (min-width: 2160px) {
+  .hero {
+    min-height: 60vh;
+  }
+  section {
+    min-height: 40vh;
+  }
+}
