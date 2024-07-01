@@ -7,7 +7,7 @@ html {
 }
 
 h1, h2, h3, .primary {
-  color: #5938fa;
+  color: #892226;
 }
 
 h1 {
@@ -28,10 +28,10 @@ h5, h6, small, i, p, a, button, label {
 }
 
 :root {
-  --primary-bg: #5938fa;
-  --secondary-text: #5938fa;
+  --primary-bg: #892226;
+  --secondary-text: #892226;
   --light-text: rgb(255, 255, 255);
-  --secondary-bg: #ffc06e;
+  --secondary-bg: #b9fbb2;
 }
 
 button:hover {
