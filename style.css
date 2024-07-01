@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 html {
@@ -43,7 +43,7 @@ button.noorange:hover {
 }
 
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -69,6 +69,10 @@ button.noorange:hover {
 }
 
 button a {
+  text-decoration: none;
+}
+
+a button {
   text-decoration: none;
 }
 
@@ -131,6 +135,10 @@ section {
   gap: 1rem;
 }
 
+.flex-right {
+  justify-content: flex-end;
+}
+
 section img {
   width: 250px;
 }
@@ -160,4 +168,133 @@ section img {
   position: relative;
   top: 0;
   left: 0;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.person h3 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.person p {
+  margin-top: 0px;
+}
+
+ion-icon {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+footer a:hover {
+  color: var(--secondary-bg)
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    margin-top: 0;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column !important;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .person img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .person h3 {
+    font-size: 1rem;
+  }
+
+  .person p {
+    font-size: 0.75rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+  }
+
+  .big {
+    font-size: 2rem;
+  }
+
+  .medium {
+    font-size: 1.5rem;
+  }
+
+  .bigger {
+    font-size: 1rem;
+  }
+
+  .small {
+    font-size: 0.5rem;
+  }
+
+  .partnersList {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .partnersList div {
+    width: fit-content;
+  }
 }

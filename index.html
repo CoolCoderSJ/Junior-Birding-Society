@@ -10,7 +10,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" type="text/css" href="https://simplist.shuchir.dev/simplist.css">
     <link rel="stylesheet" href="https://use.typekit.net/fvp0cln.css">
-    <link rel="stylesheet" href="style.css?v=11" />
+    <link rel="stylesheet" href="style.css?v=13" />
     <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 
@@ -18,13 +18,13 @@
   <div id="hero-splash"></div>
     <nav>
       <div>
-          <h2><a>Junior Birding Society</a></h2>
+          <h2><a href="#">Junior Birding Society</a></h2>
       </div>
       <div>
-          <a>Info</a>
-          <a>Activities</a>
-          <a>Partners</a>
-          <a>Contact</a>
+          <a href="#more">Info</a>
+          <a href="#partners">Partners</a>
+          <a href="#activities">Activities</a>
+          <a href="#contact">Contact</a>
       </div>
     </nav>
 
@@ -56,13 +56,15 @@
         <p>The Junior Birding Society plays a key role in bridging the gap between the youth and birding. A study in the prestigious journal Nature titled, “Initial Involvement into birding: triggers, gender, and decade effects-a mixed-methods study” analyzed statistics regarding the ages of birders. Birders typically begin bird watching at the age of 23, with an average age of 46 among avid birders. Our goal is to make birding more accessible to elementary and middle school students by breaking down the walls that make birding so inaccessible: a steep learning curve and a lack of exposure. We plan to use resources such as Merlin and eBird to increase the accessibility and engagement in birding. Through our outreach programs and events, we are trying to give students the opportunity to see the world through the lens of both a birder and a scientist.</p>
           <br><br>
         <h2>We want to inspire a whole new generation of birders and scientists.</h2>
+        <a href="https://link.jrbirding.org/donate"><button class="noorange">Click to make a tax-deductible donation</button></a>
       </div>
     </section>
 
-    <section>
+    <div id="section2_bg"></div>
+    <section id="partners">
       <h1 class="big">Our Partners</h1>
       <h3>Thank you to all of our partners who make our events possible.</h3>
-      <div class="flex" style="margin-top: 20px; justify-content: flex-start; width: 100%">
+      <div class="flex" class="partnersList" style="margin-top: 20px; justify-content: flex-start; width: 100%">
         <img src="audubon.svg">
         <div style="text-align: center;">
           <img src="birds nest.svg" height="100">
@@ -82,12 +84,12 @@
         </div>
 
         <img src="pghzoo.png" style="height: 125px; width: fit-content; margin-left: 50px;">
+        <img src="hcb.svg" style="height: 75px; margin-left: 40px; margin-top: 25px;">
       </div>
     </section>
 
-    <div id="section2_bg"></div>
     <div id="section3_bg"></div>
-    <section class="alignRight">
+    <section class="alignRight" id="activities">
       <h1 class="big">Activities</h1>
       <h3>We host a variety of different events to get as many people interested in birding as possible.</h3><br>
       <div class="grid-3">
@@ -142,7 +144,61 @@
 
     <section class="alignRight">
       <h1 class="big">About Us</h1>
+      <p>Our team is made up of a group of enthusiastic birders and teens. We aim to inspire the next generation of students who are interested in establishing a connection with the natural world. The JBS team is a collection of student birders who are all connected by our love of birds and science. We hope to spread our message to the rest of the world!</p>
+      <br>
+      <div class="flex flex-right partnersList" style="width: 100%; justify-content: space-evenly;">
+        <div class="person">
+          <img src="heads/anish.png">
+          <h3>Anish Ramachandruni</h3>
+          <p>Co-Founder and Co-President</p>
+        </div>
+
+        <div class="person">
+          <img src="heads/james.png">
+          <h3>James Xiao</h3>
+          <p>Co-Founder and Co-President</p>
+        </div>
+
+        <div class="person">
+          <img src="heads/shuchir.png">
+          <h3>Shuchir Jain</h3>
+          <p>Board Member</p>
+        </div>
+
+        <div class="person">
+          <img src="heads/kaartic.jpg">
+          <h3>Kaartic Muralidharan</h3>
+          <p>Board Member</p>
+        </div>
+
+        <div class="person">
+          <img src="heads/anthony.jpg">
+          <h3>Anthony Bramley</h3>
+          <p>Board Member</p>
+        </div>
+      </div>
     </section>
+
+    <section id="contact">
+      <h1 class="big">Contact Us</h1>
+      <h3>If you have any questions or would like to get in touch with us, please feel free to reach out to us!</h3>
+      <div class="flex" style="margin-top: 10px; width: 100%; justify-content: flex-start;">
+        <a href="mailto:contact@jrbirding.org"><button class="noorange contact-btn"><ion-icon name="mail-outline"></ion-icon> contact@jrbirding.org</button></a>
+        <a href="https://instagram.com/juniorbirdingsociety"><button class="noorange contact-btn"><ion-icon name="logo-instagram"></ion-icon> @juniorbirdingsociety</button></a>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div>
+          <h3>Junior Birding Society&nbsp; <span class="small"><i>Fiscally sponsored by The Hack Foundation. EIN: 81-2908499</i></span></h3>
+        </div>
+        <div>
+          <a href="https://link.jrbirding.org/donate">Donate</a>
+          <a href="#tally-open=3qaxqk&tally-layout=modal&tally-width=500&tally-hide-title=1">Join</a>
+        </div>
+      </nav>
+    </footer>
 
 </body>
 </html>
