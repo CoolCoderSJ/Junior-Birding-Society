@@ -47,7 +47,7 @@ button.noorange:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #hero-splash {
