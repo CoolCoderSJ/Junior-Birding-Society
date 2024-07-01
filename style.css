@@ -31,7 +31,7 @@ h5, h6, small, i, p, a, button, label {
   --primary-bg: #892226;
   --secondary-text: #892226;
   --light-text: rgb(255, 255, 255);
-  --secondary-bg: #A5D6A7;
+  --secondary-bg: #FFFFFF;
 }
 
 button:hover {
