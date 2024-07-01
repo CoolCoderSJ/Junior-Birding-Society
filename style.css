@@ -1,49 +1,100 @@
-.alert {
-    background-color: hsl(var(--b1) / 1);
+body {
+  overflow-x: hidden
 }
 
-h1, h2, h3, h4, h5, h6, p, a, button, small, i, b {
-  color: white;
+html {
+  scroll-behavior: smooth;
 }
 
-.team-grid .card {
-    max-width: 45vh;
+h1, h2, h3, .primary {
+  color: #5938fa;
+}
+
+h1 {
+  font-family: "brevia", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2, h3, h4 {
+  font-family: "brevia", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5, h6, small, i, p, a, button, label {
+  font-family: "brevia", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --primary-bg: #5938fa;
+  --secondary-text: #5938fa;
+  --light-text: rgb(255, 255, 255);
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+#hero-splash {
+  background-image: url('hero.svg');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  fill: #ffcb86;
+}
+
+.hero h1 {
+  margin-top: 10rem;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+.bigger {
+  font-size: 1.25rem;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+section { 
+  padding: 3rem 0;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .flex {
-  width: 100%;
+  display: flex;
   justify-content: center;
+  align-self: center;
+  flex-direction: row !important;
+  gap: 1rem;
 }
 
-.bg {
-  background-image: url("bird.png");
-  background-repeat: repeat;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 200px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-
-@media only screen and (min-width: 1080px) {
-.wide-on-big-screen {
-  width: 75vh;
-}
-}
-
-.card figure {
-  height: 325px;
-}
-
-.card .figure2 {
-  height: 250px;
-}
-
-.fillbg {
-  background-size: cover;
-  background-position: center;
+section img {
+  width: 250px;
 }
