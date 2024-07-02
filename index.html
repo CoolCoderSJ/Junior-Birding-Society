@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/fvp0cln.css">
     <link rel="stylesheet" href="style.css?v=13" />
     <script async src="https://tally.so/widgets/embed.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -60,11 +61,20 @@
       </div>
     </section>
 
+    <section id="blog">
+      <h1 class="big">Hot Off the Press!</h1>
+      <h3>Check out our latest news and updates from our blog! <a href="//blog.jrbirding.org">Visit the blog</a></h3>
+      <p id="loading"><i>Please be patient, posts are still loading...</i></p>
+      <div id="posts" style="display: flex; width: 100%; align-items: center; justify-content: flex-start; gap: 1rem;">
+
+      </div>
+    </section>
+
     <div id="section2_bg"></div>
-    <section id="partners">
+    <section id="partners" class="alignRight">
       <h1 class="big">Our Partners</h1>
       <h3>Thank you to all of our partners who make our events possible.</h3>
-      <div class="flex" class="partnersList" style="margin-top: 20px; justify-content: flex-start; width: 100%">
+      <div class="flex" class="partnersList" style="margin-top: 20px; justify-content: flex-end; width: 100%">
         <img src="audubon.svg">
         <div style="text-align: center;">
           <img src="birds nest.svg" height="100">
@@ -89,7 +99,7 @@
     </section>
 
     <div id="section3_bg"></div>
-    <section class="alignRight" id="activities">
+    <section id="activities">
       <h1 class="big">Activities</h1>
       <h3>We host a variety of different events to get as many people interested in birding as possible.</h3><br>
       <div class="grid-3">
@@ -136,13 +146,15 @@
       </div>
     </section>
 
-    <section>
+    <section class="alignRight">
       <h1 class="big">Become a Member!</h1>
       <p>It is completely free to become a member of the Junior Birding Society! By removing the financial barrier surrounding birding, we ensure that every student, regardless of their financial situation, has an equal opportunity to pursue birding. We believe that every student should have the chance to chase their passions. As a member, you can get access to exclusive birding opportunities and events. Join us as a member of the JBS!</p>
-      <button class="noorange" style="width: fit-content; margin-top: 10px;" data-tally-open="3qaxqk" data-tally-layout="modal" data-tally-width="500" data-tally-hide-title="1">Become a Member</button>
+      <div style="display: flex; justify-content: flex-end; width: 100%;">
+        <button style="width: fit-content; margin-top: 10px;" data-tally-open="3qaxqk" data-tally-layout="modal" data-tally-width="500" data-tally-hide-title="1">Become a Member</button>
+      </div>
     </section>
 
-    <section class="alignRight">
+    <section>
       <h1 class="big">About Us</h1>
       <p>Our team is made up of a group of enthusiastic birders and teens. We aim to inspire the next generation of students who are interested in establishing a connection with the natural world. The JBS team is a collection of student birders who are all connected by our love of birds and science. We hope to spread our message to the rest of the world!</p>
       <br>
@@ -179,10 +191,10 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section class="alignRight" id="contact">
       <h1 class="big">Contact Us</h1>
       <h3>If you have any questions or would like to get in touch with us, please feel free to reach out to us!</h3>
-      <div class="flex" style="margin-top: 10px; width: 100%; justify-content: flex-start;">
+      <div class="flex" style="margin-top: 10px; width: 100%; justify-content: flex-end;">
         <a href="mailto:contact@jrbirding.org"><button class="noorange contact-btn"><ion-icon name="mail-outline"></ion-icon> contact@jrbirding.org</button></a>
         <a href="https://instagram.com/juniorbirdingsociety"><button class="noorange contact-btn"><ion-icon name="logo-instagram"></ion-icon> @juniorbirdingsociety</button></a>
       </div>
