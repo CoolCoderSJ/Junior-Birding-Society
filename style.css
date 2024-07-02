@@ -7,7 +7,7 @@ html {
 }
 
 h1, h2, h3, .primary {
-  color: #5938fa;
+  color: #892226;
 }
 
 h1 {
@@ -28,10 +28,10 @@ h5, h6, small, i, p, a, button, label {
 }
 
 :root {
-  --primary-bg: #5938fa;
-  --secondary-text: #5938fa;
+  --primary-bg: #892226;
+  --secondary-text: #892226;
   --light-text: rgb(255, 255, 255);
-  --secondary-bg: #ffc06e;
+  --secondary-bg: #FFFFFF;
 }
 
 button:hover {
@@ -47,7 +47,7 @@ button.noorange:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #hero-splash {
@@ -296,5 +296,88 @@ footer a:hover {
 
   .partnersList div {
     width: fit-content;
+  }
+}
+
+@media (min-width: 2160px) {
+  .hero {
+    min-height: 30vh;
+  }
+  section {
+    min-height: 20vh;
+  }
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero img {
+    width: 50%;
+  }
+
+  .big {
+    font-size: 5rem;
+  }
+
+  .medium {
+    font-size: 3rem;
+  }
+
+  .bigger {
+    font-size: 2rem;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+
+  .person img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .person h3 {
+    font-size: 2rem;
+  }
+
+  .person p {
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card h2 {
+    font-size: 3rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  .partnersList {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .partnersList div {
+    width: fit-content;
+  }
+
+  .contact-btn {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+
+  footer a:hover {
+    font-size: 1.5rem;
   }
 }
